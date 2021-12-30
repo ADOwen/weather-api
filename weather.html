@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<title>Title</title>
+</head>
+<body>
+    
+    <div align='center' class='container'style='width: 300px;'>
+        <form name ='city' id='cityDataForm' class ='d-flex flex-column'>
+            <input class='mt-2'type="text" name="cityName" id="city-name" placeholder="enter city">
+            <input class='mt-2' type="text" name="zipcode" id="zipcode" placeholder="enter zipcode">
+            <button class='mt-2' type='submit'>Submit</button>
+        </form>
+    </div>
+
+    <div class="container" style='width: 200px;'>
+        <div>
+            <div class="card mt-4">
+                <h5 class="card-header">High</h5>
+                <div class="card-body" id='high'></div>
+            </div>
+        </div>
+        <div>
+            <div class="card mt-4">
+                <h5 class="card-header">Low</h5>
+                <div class="card-body" id='low'></div>
+            </div>
+        </div>        
+        <div>
+            <div class="card mt-4">
+                <h5 class="card-header">Forecast</h5>
+                <div class="card-body" id='forecast'></div>
+            </div>
+        </div>
+        <div>
+            <div class="card mt-4">
+                <h5 class="card-header">Humidity</h5>
+                <div class="card-body" id='humidity'></div>
+            </div>
+        </div>      
+    </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+<script src="weather.js"></script>
+</body>
+</html>
